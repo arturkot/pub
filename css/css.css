@@ -1,0 +1,423 @@
+* {
+padding:0;
+margin:0;
+border:0 none
+}
+
+#scene,
+#ie {
+width:840px;
+height:706px;
+
+position:absolute;
+left:50%;
+top:50%;
+
+opacity:0;
+
+margin:-353px 0 0 -420px;
+}
+
+#special_scene {
+width:840px;
+height:706px;
+
+position:absolute;
+z-index:8;
+left:0;
+top:0
+}
+
+.info {
+width:40px;
+height:40px;
+
+position:absolute;
+left:10px;
+bottom:110%;
+
+-moz-transform: scaleY(.866) rotate(30deg) skew(30deg);
+-webkit-transform: scaleY(.866) rotate(30deg) skew(30deg);
+-o-transform: scale(0 .866) rotate(30deg) skew(30deg);
+-ms-transform: scale(0 .866) rotate(30deg) skew(30deg);
+transform: scaleY(.866) rotate(30deg) skew(30deg)
+}
+
+.text {
+color:#fefefe;
+
+min-width:100px;
+padding:0 0 4px;
+
+position:absolute;
+z-index:8;
+left:25px;
+bottom:95%;
+
+background:url(../images/text.png) no-repeat 0 bottom;
+
+-moz-transform: scaleY(.866) rotate(30deg) skew(30deg);
+-webkit-transform: scaleY(.866) rotate(30deg) skew(30deg);
+-o-transform: scale(0 .866) rotate(30deg) skew(30deg);
+-ms-transform: scale(0 .866) rotate(30deg) skew(30deg);
+transform: scaleY(.866) rotate(30deg) skew(30deg)
+}
+
+.text div {
+font:14px/18px Verdana, Tahoma, Arial, Sans-serif;
+
+width:auto;
+
+padding:10px;
+
+background:rgba(29, 29, 27,.9)
+}
+
+#overlay {
+
+width:100%;
+height:100%;
+
+position: fixed;
+z-index: 9;
+left:0;
+top:0; 
+
+background:rgba(29, 29, 27, 0.3)  
+}
+
+#restart,
+#info,
+#ie_info {
+color: #FEFEFE;
+font: 18px/normal verdana,tahoma,arial,sans-serif;
+text-transform: lowercase;
+text-align:center;
+
+width:100px;
+padding: 10px;
+margin:0 0 0 -60px;
+
+position: fixed;
+z-index: 10;
+left: 50%;
+top: -100%;    
+
+cursor:pointer;
+   
+background:rgba(29, 29, 27, 0.9)
+}
+
+#info,
+#ie_info {
+font-size:12px;
+cursor:default;
+
+width:320px;
+margin:0 0 0 -160px
+}
+
+#ie_info {
+text-transform: none;
+
+width:420px;
+margin:0 0 0 -210px;
+
+top: 0;
+
+background:#000
+}
+
+/* characters */
+
+#bartender,
+#bartender_clone {
+width:53px;
+height:110px;
+
+position:absolute;
+z-index:1;
+left:185px;
+top:397px;
+
+cursor:pointer;
+
+background:url(../images/bartender.png) no-repeat
+}
+
+#bartender .info {
+background:url(../images/info.png) no-repeat
+}
+
+#sandra {
+width:55px;
+height:110px;
+
+position:absolute;
+z-index:3;
+left:332px;
+top:399px;
+
+cursor:pointer;
+
+background:url(../images/sandra_sitting.png) no-repeat 0 -220px
+}
+
+#sandra .info {
+background:url(../images/info.png) no-repeat 0 -160px
+}
+
+#monica,
+#monica_clone {
+width:65px;
+height:116px;
+
+position:absolute;
+z-index:3;
+left:409px;
+top:354px;
+
+cursor:pointer;
+
+background:url(../images/monica_sitting.png) no-repeat 0 -232px
+}
+
+#monica .info,
+#monica_clone .info {
+background:url(../images/info.png) no-repeat 0 -80px
+}
+
+
+#olivia {
+width:65px;
+height:120px;
+
+position:absolute;
+z-index:3;
+left:486px;
+top:306px;
+
+cursor:pointer;
+
+background:url(../images/olivia_sitting.png) no-repeat 0 -240px
+}
+
+#olivia .info {
+background:url(../images/info.png) no-repeat 0 -120px
+}
+
+#johnny {
+width:65px;
+height:110px;
+
+position:absolute;
+z-index:1;
+left:1010px;
+top:155px;
+
+background:url(../images/johnny.png) no-repeat 0 0
+}
+
+#johnny .info {
+background:url(../images/info.png) no-repeat 0 -40px
+}
+
+#bully {
+width:60px;
+height:104px;
+
+position:absolute;
+z-index:1;
+left:1010px;
+top:155px;
+
+background:url(../images/bully.png) no-repeat 0 0
+}
+
+/* masks and things */
+
+#pub,
+#ie div {
+width:840px;
+height:706px;
+
+position:absolute;
+z-index:2;
+left:0;
+top:0;
+
+background:url(../images/pub.png)
+}
+
+#door {
+width:63px;
+height:254px;
+
+position:absolute;
+left:780px;
+top:134px;
+
+background:url(../images/door.png) no-repeat 0 -508px
+}
+
+#beer {
+width:14px;
+height:19px;
+
+position:absolute;
+z-index:3;
+left:522px;
+top:282px;
+
+background:url(../images/beer.png)
+}
+
+#counter_mask {
+-moz-transform: rotate(-30deg);
+-webkit-transform: rotate(-30deg);
+-o-transform: rotate(-30deg);
+-ms-transform: rotate(-30deg);
+transform: rotate(-30deg);
+    
+width:537px;
+height:96px;
+
+position: absolute;
+z-index:2;
+left:154px;
+top:358px;
+
+overflow:hidden
+}
+
+#counter_mask > div {
+-moz-transform: rotate(30deg);
+-webkit-transform: rotate(30deg);
+-o-transform: rotate(30deg);
+-ms-transform: rotate(30deg);
+transform: rotate(30deg);
+    
+width:452px;
+height:320px;
+
+position: absolute;
+left:48px;
+top:-116px;
+    
+background: url("../images/pub.png") repeat scroll -199px -240px transparent
+}
+
+#door_mask {
+-moz-transform: rotate(30deg);
+-webkit-transform: rotate(30deg);
+-o-transform: rotate(30deg);
+-ms-transform: rotate(30deg);
+transform: rotate(30deg);
+    
+width:94px;
+height:51px;
+
+position: absolute;
+z-index:2;
+left:127px;
+top:468px;
+
+overflow:hidden
+}
+
+#door_mask > div {
+-moz-transform: rotate(-30deg);
+-webkit-transform: rotate(-30deg);
+-o-transform: rotate(-30deg);
+-ms-transform: rotate(-30deg);
+transform: rotate(-30deg);
+    
+width:58px;
+height:91px;
+
+position: absolute;
+left:18px;
+top:-20px;
+    
+background: url("../images/pub.png") repeat scroll -145px -448px transparent
+}
+
+#taps_mask {
+-moz-transform: rotate(-30deg);
+-webkit-transform: rotate(-30deg);
+-o-transform: rotate(-30deg);
+-ms-transform: rotate(-30deg);
+transform: rotate(-30deg);
+    
+width:36px;
+height:26px;
+
+position: absolute;
+z-index:2;
+left:226px;
+top:428px;
+
+overflow:hidden
+}
+
+#taps_mask > div {
+-moz-transform: rotate(30deg);
+-webkit-transform: rotate(30deg);
+-o-transform: rotate(30deg);
+-ms-transform: rotate(30deg);
+transform: rotate(30deg);
+    
+width:27px;
+height:40px;
+
+position: absolute;
+left:2px;
+top:-7px;
+    
+background: url("../images/taps.png") no-repeat scroll 0 1px transparent
+}
+
+/* #counter_mask > div:hover,
+#door_mask > div:hover,
+#taps_mask > div:hover {
+background:yellow
+} */
+
+#author {
+font:14px/40px arial, sans-serif;
+background:rgb(0,0,0);
+background:rgba(0, 0, 0, 0.5);
+height:40px;
+left:0;
+line-height:40px;
+position:absolute;
+z-index:999;
+text-align:center;
+top:0;
+width:80px
+}
+
+#author a {
+color:#fff;
+text-decoration:none
+}
+
+/* preload all graphic */
+p { background: url("../images/bartender.png"); }
+p { background: url("../images/bartender_guns.png"); }
+p { background: url("../images/beer.png"); }
+p { background: url("../images/bully.png"); }
+p { background: url("../images/door.png"); }
+p { background: url("../images/info.png"); }
+p { background: url("../images/johnny.png"); }
+p { background: url("../images/johnny_lying.png"); }
+p { background: url("../images/johnny_sitting.png"); }
+p { background: url("../images/monica_sitting.png"); }
+p { background: url("../images/monica_standing.png"); }
+p { background: url("../images/olivia_eyes.png"); }
+p { background: url("../images/olivia_sitting.png"); }
+p { background: url("../images/olivia_sub_scene.png"); }
+p { background: url("../images/pub.png"); }
+p { background: url("../images/sandra_sitting.png"); }
+p { background: url("../images/taps.png"); }
+p { background: url("../images/text.png"); }

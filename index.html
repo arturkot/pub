@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+
+<title>PUB</title>
+
+<meta name="description" content="Interactive animation made with HTML, CSS and javascript." />
+
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon" /> 
+
+<link rel="stylesheet" href="css/css.css" />
+
+<!--[if ! lte IE 8 ]><!-->
+
+<script src="js/jquery-1.4.4.min.js"></script>
+<script src="js/preloadCssImages.jQuery_v5.js"></script>
+<script src="js/jquery.path.js"></script>
+<script src="js/soundmanager2-nodebug-jsmin.js"></script>
+<script src="js/script.js"></script>
+
+<!--<![endif]-->
+
+</head>
+
+<body>
+
+<!--[if ! lte IE 8 ]><!-->
+
+<audio id="pub_ambience" preload="auto"> 
+  <source src="audio/bkg.mp3" type="audio/mpeg">
+</audio>​
+
+<audio id="sound_shot" preload="auto"> 
+  <source src="audio/shot.mp3" type="audio/mpeg">
+</audio>​
+
+<audio id="sound_door" preload="auto"> 
+  <source src="audio/door.mp3" type="audio/mpeg">
+</audio>​
+
+<audio id="sound_bam" preload="auto"> 
+  <source src="audio/bam.mp3" type="audio/mpeg">
+</audio>​
+
+<audio id="sound_scary" preload="auto"> 
+  <source src="audio/scary.mp3" type="audio/mpeg">
+</audio>​
+
+<audio id="sound_hit" preload="auto"> 
+  <source src="audio/hit.mp3" type="audio/mpeg">
+</audio>​
+
+<div id="scene">
+
+  <div id="special_scene"></div>
+
+  <div id="bully" class="character">
+    <div class="info"></div>
+    <div class="text"><div></div></div>
+  </div>
+
+  <div id="johnny" class="character">
+    <div class="info"></div>
+    <div class="text"><div></div></div>
+  </div>
+
+<div id="pub">
+
+   <div id="door"></div>
+
+  <div id="bartender_clone">
+    <div class="info"></div>
+    <div class="text"><div></div></div>
+  </div>
+
+  <div id="bartender" class="character">
+    <div class="info"></div>
+    <div class="text"><div></div></div>
+  </div>
+  
+  <div id="beer"></div>
+
+  <div id="counter_mask">
+    <div></div>
+  </div>
+  
+  <div id="door_mask">
+    <div></div>
+  </div>
+  
+  <div id="taps_mask">
+    <div></div>
+  </div>
+
+  <div id="olivia" class="character">
+    <div class="info"></div>
+    <div class="text"><div></div></div>
+  </div>
+  
+  <div id="monica_clone" class="character">
+    <div class="info"></div>
+    <div class="text"><div></div></div>
+  </div>
+  
+  <div id="monica" class="character">
+    <div class="info"></div>
+    <div class="text"><div></div></div>
+  </div>
+  
+  <div id="sandra" class="character">
+    <div class="info"></div>
+    <div class="text"><div></div></div>
+  </div>
+
+</div>
+
+</div>
+
+<div id="overlay"></div>
+
+<div id="restart">
+Restart?
+</div>
+
+<div id="info">
+Left click (anywhere) to continue!
+</div>
+
+<!--<![endif]-->
+
+
+<!--[if lte IE 8 ]>
+<div id="ie">
+ <div></div>
+</div>
+
+<div id="ie_info">
+This animation won't work on Internet Explorer. :(<br />
+Sorry! <strong>I really didn't have time to fiddle with it.</strong>
+</div>
+<![endif]-->
+
+<div id="author"><a href="http://arturkot.pl">arturkot.pl</a></div>
+
+</body>
+
+</html>
